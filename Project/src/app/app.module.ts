@@ -7,13 +7,15 @@ import { MainComponent } from './main/main.component';
 import { SliderComponent } from './slider/slider.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { FormsModule } from '@angular/forms';
+import { TestimonialComponent } from './testimonial/testimonial.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     SliderComponent,
-    AboutUsComponent],
+    AboutUsComponent,
+    TestimonialComponent],
   imports: [
     BrowserModule,
     AppRoutingModule

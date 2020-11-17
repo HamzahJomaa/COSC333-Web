@@ -20,6 +20,27 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
     crossorigin="anonymous"></script>
+  <script src="https://pagead2.googlesyndication.com/pagead/js/r20201112/r20190131/show_ads_impl_fy2019.js"
+    id="google_shimpl"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+
 </body>
 
 </html>
+<script>
+  $(document).ready(function () {
+    $("#testimonial-slider").owlCarousel({
+      items: 3,
+      itemsDesktop: [1000, 3],
+      itemsDesktopSmall: [980, 2],
+      itemsTablet: [768, 2],
+      itemsMobile: [650, 1],
+      pagination: true,
+      navigation: false,
+      slideSpeed: 1000,
+      autoPlay: true
+    });
+  }); 
+</script>

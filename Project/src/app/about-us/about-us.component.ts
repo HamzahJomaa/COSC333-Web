@@ -9,11 +9,6 @@ export class AboutUsComponent implements OnInit {
   title = "About Us"
   constructor() { }
   values = '';
-
-  onKey(event: any) { // without type info
-    this.values = ''
-    this.values += event.target.value;
-  }
   ngOnInit(): void {
   }
 
