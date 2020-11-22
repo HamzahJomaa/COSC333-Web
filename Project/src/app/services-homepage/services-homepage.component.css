@@ -33,8 +33,19 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .margin-container {
+    margin-left: 5%;
+    width: 90%;
+
+    text-align: center;
+  }
+}
+
 .styled {
-  display: inline-block;
+
+  position: unset;
   border: transparent;
   margin-top: 10px;
   margin-bottom: 50px;
