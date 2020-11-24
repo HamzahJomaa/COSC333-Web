@@ -23,3 +23,12 @@ div>h5 {
 a[href="https://moodle.rhu.edu.lb"] {
   color: purple;
 }
+
+@media screen and (max-width: 600px) {
+
+
+  footer.page-footer.font-small.pt-4 {
+    margin-top: 0 !important;
+
+  }
+}

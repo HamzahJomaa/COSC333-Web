@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ServicesHomepageComponent } from './services-homepage/services-homepage.component';
 import { DeptHomeComponent } from './dept-home/dept-home.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { DeptHomeComponent } from './dept-home/dept-home.component';
     AboutUsComponent,
     TestimonialComponent,
     ServicesHomepageComponent,
-    DeptHomeComponent],
+    DeptHomeComponent,
+    SignUpComponent],
   imports: [
     LottieAnimationViewModule.forRoot(),
     BrowserModule,
