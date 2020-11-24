@@ -1,1 +1,25 @@
+.margin-container {
+  margin-left: 25%;
+  width: 50%;
+}
 
+.nav-link {
+  color: black !important;
+  font-weight: unset !important;
+}
+
+.list-unstyled>li>a:visited,
+a.footer:link {
+
+  color: white;
+
+}
+
+div>h5 {
+  color: black;
+}
+
+
+a[href="https://moodle.rhu.edu.lb"] {
+  color: purple;
+}
