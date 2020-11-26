@@ -12,6 +12,7 @@ import { TestimonialComponent } from './testimonial/testimonial.component';
 import { ServicesHomepageComponent } from './services-homepage/services-homepage.component';
 import { DeptHomeComponent } from './dept-home/dept-home.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
+import { LabResultsComponent } from './lab-results/lab-results.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { SignUpComponent } from './sign-up/sign-up.component';
     TestimonialComponent,
     ServicesHomepageComponent,
     DeptHomeComponent,
-    SignUpComponent],
+    SignUpComponent,
+    LabResultsComponent],
   imports: [
     LottieAnimationViewModule.forRoot(),
     BrowserModule,

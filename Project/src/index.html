@@ -62,5 +62,18 @@
       slideSpeed: 1000,
       autoPlay: true
     });
-  }); 
+  });
+
+  $(document).ready(() => {
+
+    $('#lab-rslt tr').each(function () {
+      var $tds = $(this).find('td');
+      if ($tds.length != 0) {
+        var $currText = $tds.eq(2).text();
+        if ($currText == "Positive") {
+          $(this).addClass("positive")
+        }
+      }
+    });
+  })
 </script>
