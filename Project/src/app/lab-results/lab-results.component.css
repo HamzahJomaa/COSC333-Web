@@ -1,3 +1,36 @@
 tr.positive {
   color: red;
 }
+
+
+.margin-container {
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+
+}
+
+.title {
+  text-align: center;
+  margin: 1% 10%;
+
+}
+
+.desc {
+  margin: 1% 0;
+}
+
+
+#btn_download:hover {
+  background-color: #1ca0f4;
+}
+
+
+
+@media screen and (max-width: 650px) {
+
+  table {
+    display: none;
+  }
+
+}
