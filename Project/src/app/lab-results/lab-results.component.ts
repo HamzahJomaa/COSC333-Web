@@ -12,14 +12,18 @@ import { Observable } from 'rxjs';
 export class LabResultsComponent implements OnInit {
 
   names = ["Walid", "Abed", "Mohamad", "Afif", "Yasmina", "Reem", "Rita"]
+  
   family = ["Jomaa", "Boubou", "Masri", "Yassine", "Ali", "Natour", "Najim"]
+
   pcr = ["Negative", "Positive", "Positive", "Positive", "Negative", "Negative", "Positive"]
 
 
   constructor() {
+    
   }
 
   ngOnInit(): void {
+
   }
 
 }
