@@ -14,6 +14,7 @@ import { DeptHomeComponent } from './dept-home/dept-home.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { LabResultsComponent } from './lab-results/lab-results.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { BookingComponent } from './booking/booking.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
     DeptHomeComponent,
     SignUpComponent,
     LabResultsComponent,
-    ContactUsComponent],
+    ContactUsComponent,
+    BookingComponent],
   imports: [
     LottieAnimationViewModule.forRoot(),
     BrowserModule,

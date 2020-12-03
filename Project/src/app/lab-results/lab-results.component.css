@@ -3,6 +3,10 @@ tr.positive {
 }
 
 
+tr.temp {
+  font-weight: bolder;
+}
+
 .margin-container {
   margin-top: 2%;
   margin-left: 10%;

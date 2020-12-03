@@ -52,6 +52,19 @@ form {
   text-align: center;
 }
 
+
+select {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+}
+
+
+select:active,
+:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 600px) {
   .margin-container {
     margin-left: 5%;

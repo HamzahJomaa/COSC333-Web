@@ -67,15 +67,43 @@
 
   $(document).ready(() => {
 
-    $('#lab-rslt tr').each(function () {
+    $('.margin-container #lab-rslt tr').each(function () {
       var $tds = $(this).find('td');
       if ($tds.length != 0) {
-        var $currText = $tds.eq(2).text();
+        var $currText = $tds.eq(3).text();
         if ($currText == "Positive") {
           $(this).addClass("positive")
         }
       }
+
+      var $tds = $(this).find('td');
+      if ($tds.length != 0) {
+        var $currText = $tds.eq(4).text();
+        if ($currText > 37) {
+          $(this).addClass("temp")
+        }
+      }
     });
+
+
+
+    $("#btn_download").click(() => {
+      var html = document.querySelector("table").outerHTML;
+      export_table_to_csv(html, "Lab Results.csv");
+    })
+
+
+    $("#formcntct").submit((e) => {
+      if ($("#name").text() == '') { alert("Feel Your Name"); e.preventDefault(); }
+      if ($("#email").text() == '') { alert("Feel Your Email"); e.preventDefault(); }
+      if ($("#phone").text() == '') { alert("Feel Your Phone"); e.preventDefault(); }
+      if ($("#dob").text() == '') { alert("Feel Your Date of Birth"); e.preventDefault(); }
+      if ($("#txtarea").text() == '') { alert("Feel Your Message"); e.preventDefault(); }
+
+    })
+
+
+
 
     function download_csv(csv, filename) {
       var csvFile;
@@ -119,11 +147,6 @@
       // Download CSV
       download_csv(csv.join("\n"), filename);
     }
-
-    document.querySelector("#btn_download").addEventListener("click", function () {
-      var html = document.querySelector("table").outerHTML;
-      export_table_to_csv(html, "Lab Results.csv");
-    });
 
 
   })
