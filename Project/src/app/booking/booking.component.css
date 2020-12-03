@@ -17,8 +17,7 @@
 
 label {
   font-size: 20px;
-  font-weight: lighter;
-  width: 25%;
+  width: 10%;
 }
 
 input,
@@ -26,18 +25,23 @@ textarea {
   color: white;
   background-color: transparent;
   border-bottom: 2px solid black;
-  width: 75%;
-  max-width: 100%;
+  width: 100%;
 }
 
+input[type="text"] {
+  width: 85%;
+  float: right;
+}
 
 input:focus {
   border-color: white;
   background-color: transparent;
 }
 
-button {
-  background-color: white;
+input[type="submit"] {
+  color: black;
+  margin-top: 20px;
+  background-color: grey;
   padding: 1%;
   border-radius: 10px;
 }
@@ -47,16 +51,16 @@ form {
   margin-left: 25%;
 }
 
-.btn-div {
 
-  text-align: center;
-}
 
 
 select {
   background-color: transparent;
   border: none;
+  border-bottom: 2px solid black;
   width: 100%;
+  margin-top: 10px;
+
 }
 
 
@@ -65,15 +69,70 @@ select:active,
   outline: none;
 }
 
-@media screen and (max-width: 600px) {
-  .margin-container {
-    margin-left: 5%;
-    width: 90%;
+input[type="datetime-local"] {
+  margin-top: 30px;
+}
 
+input[type="text"]::placeholder {
+  color: transparent;
+}
+
+@media screen and (max-width: 600px) {
+  input[type="submit"] {
+    padding: 2%;
+  }
+
+  input[type="text"] {
+    width: 100%;
+  }
+
+  input[type="text"]::placeholder {
+    color: white;
+    opacity: 0.5;
+  }
+
+  select {
+    margin-top: 30px;
+  }
+
+  form {
+    width: 90%;
+    margin-left: 2%;
+
+  }
+
+  label {
+    display: none;
+  }
+
+  .margin-container {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  .margin-container>h1 {
+    margin: 0px 5px;
+    text-align: center;
+  }
+
+  .margin-container h3 {
+    margin: 0px 5px;
+    text-align: center;
+  }
+
+  .margin-container p {
+    margin: 0px 5px;
+    text-align: center;
+  }
+
+  .margin-container h5 {
+    margin: 0px 5px;
     text-align: center;
   }
 
   .contact {
     width: 100%;
+    border-radius: 0;
+    margin: 0;
   }
 }
